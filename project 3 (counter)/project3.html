@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COUNTER</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: grey;
+        }
+        #main {
+          text-align: center;
+          /* background: aqua; */
+          padding: 20px;
+          border-radius: 10px;
+         
+        }
+        #operations {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px 10px;
+          background: rgb(241, 239, 104);
+        }
+        #display {
+          margin: 0 20px;
+          font-size: 24px;
+          padding:  10px 10px;
+          
+        }
+        button {
+          border: none;
+          background: none;
+          cursor: pointer;
+          font-size: 24px;
+        }
+        #increment{
+            padding-right: 30px;
+            border-right: 2px solid black;
+        }
+        
+        #decrement{
+            padding-left: 30px;
+            border-left: 2px solid black;
+        }
+        #heading{
+            padding-bottom: 10px;
+            font-size: larger;
+            font: bolder;
+            color: rgb(2, 49, 26);
+            
+        }
+      </style>
+  </head>
+  <body>
+    <div id="main">
+      <div id="heading">Increment And Decrement</div>
+
+      <div id="operations">
+        <button id="increment" onclick="increment()">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        <div id="display">0</div>
+        <button id="decrement" onclick="decrement()">
+            <i class="fa-solid fa-minus"></i>
+        </button>
+      </div>
+    </div>
+    <script src = "project3.js"></script>
+  </body>
+</html>
